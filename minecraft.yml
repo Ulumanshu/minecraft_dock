@@ -16,6 +16,7 @@ services:
       EULA: "TRUE"
       # Set server type (vs the default of vanilla)
       TYPE: SPIGOT
+    restart: always
     volumes:
-    - ./large_data:/data:ro
+    - ./large_data:/data
 

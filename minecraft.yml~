@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  mc:
+  mc_large:
     image: itzg/minecraft-server
     ports:
     - 25565:25565
@@ -16,6 +16,7 @@ services:
       EULA: "TRUE"
       # Set server type (vs the default of vanilla)
       TYPE: SPIGOT
+    restart: always
     volumes:
-    - ./data:/data:ro
+    - ./large_data:/data
 
